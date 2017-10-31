@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  token: MyString
-  title: MyString
-  url: MyString
+  token: anyarbitrarystring
+  title: Please Help with QLab
+  url: "https://figure53.com"
 
 two:
-  token: MyString
-  title: MyString
-  url: MyString
+  token: randobutnot
+  title: Please Help with GoButton
+  url: "https://figure53.com/gobutton"
