@@ -3,7 +3,7 @@ class CreateSurveyResponses < ActiveRecord::Migration
     create_table :survey_responses do |t|
       t.references :survey, index: true, foreign_key: true
       t.string :email
-      t.int :rating
+      t.integer :rating
       t.text :comment
 
       t.timestamps null: false
