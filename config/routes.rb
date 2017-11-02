@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
   root 'home#index'
 
-  # Example resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
+  resources :survey_responses, only: [:new, :create]
+
+  namespace :api do
+    namespace :v1 do
+
+      resources :surveys, only: [:create]
+
+    end
+  end
+
 end
