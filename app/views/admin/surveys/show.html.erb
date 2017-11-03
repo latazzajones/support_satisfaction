@@ -1,0 +1,45 @@
+<ul>
+  <li>
+    Survey Id:  <%= @survey.id %>
+  </li>
+  <li>
+    Survey Title: <%= @survey.title %>
+  </li>
+  <li>
+    Number of Responses: <%= @survey.responses.count %>
+  </li>
+  <li>
+    Redphone URL: <%= @survey.url %> 
+  </li>
+</ul>
+
+<table>
+  <tr>
+    <th>
+      Respondent's email
+    </th>
+    <th>
+      Rating
+    </th>
+    <th>
+      Comments
+    </th>
+  </tr>
+
+  <% @survey.responses.each do |response| %>
+    <tr>
+      <td>
+        <%= response.email %>
+      </td>
+      <td>
+        <% response.rating.times do %>
+          <span>⭐️ </span>
+        <% end %>
+      </td>
+      <td>
+        <%= response.comment %>
+      </td>
+    </tr>
+  <% end %>
+
+</table>

@@ -1,7 +1,13 @@
 class Survey < ActiveRecord::Base
+  has_many :survey_responses
+
   before_create :generate_token
 
   validates :title, presence: true
+
+  def responses
+    survey_responses
+  end
 
   def generate_token
     self.token = unique_token 
