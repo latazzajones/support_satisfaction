@@ -1,4 +1,4 @@
-# support_satisfaction
+# Support Satisfaction
 
 ## Getting set up
 
@@ -12,7 +12,7 @@ This is a little app and pretty easy to get up and running to take a look at!
 
 #### Log in to the Admin Dashboard
 
-1. Go to `http://localhost:3000/admin` in your browser
+1. Go to [`http://localhost:3000/admin`](http://localhost:3000/admin) in your browser
 1. Log in with the following credentials. 
   * username: `name`
   * password: `password`    
