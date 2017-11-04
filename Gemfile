@@ -12,10 +12,7 @@ gem 'redcarpet'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 #styling
-gem "therubyracer"
-gem "less-rails" 
 gem "twitter-bootstrap-rails"
-
 
 group :development, :test do
   gem 'byebug'

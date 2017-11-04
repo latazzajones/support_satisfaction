@@ -1,18 +1,25 @@
-<h1>Customer Service Survey</h1>
+<div class="form-horizontal">
 
-<p>Thank you so much for taking the time to give us feedback on our work!</p>
+  <h1 class="text-center">Customer Service Survey</h1>
+
+  <div class="col-sm-8 col-sm-offset-2">
+    <p>Thank you so much for taking the time to give us feedback on our work!</p>
 
 
-<%= form_for @survey_response do |f| %>
+    <%= form_for @survey_response, class: "form-group" do |f| %>
 
-  <%= f.label :email %>
-  <%= f.text_field :email %>
+      <%= f.label "Email Address" %>
+      <%= f.text_field :email, class: "form-control" %>
 
-  <%= f.label :rating %>
-  <%= f.select :rating, [1, 2, 3, 4, 5] %>
+      <%= f.label :rating %>
+      <%= f.select :rating, [1, 2, 3, 4, 5], {}, class: "form-control" %>
 
-  <%= f.label :comment %>
-  <%= f.text_area :comment %> 
+      <%= f.label :comment %>
+      <%= f.text_area :comment, class: "form-control" %> 
 
-  <%= f.submit %>
-<% end %>
+      <%= f.submit 'Submit', class: "btn btn-default btn-lg btn-block" %>
+
+    <% end %>
+
+  </div>
+</div>

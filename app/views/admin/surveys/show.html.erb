@@ -1,19 +1,18 @@
-<ul>
+
+<h1>Survey Id:  <%= @survey.id %> </h1>
+<ul class="list-unstyled">
   <li>
-    Survey Id:  <%= @survey.id %>
+    <span>Survey Title: <%= @survey.title %></span>
   </li>
   <li>
-    Survey Title: <%= @survey.title %>
+    <span>Number of Responses: <%= @survey.responses.count %></span>
   </li>
   <li>
-    Number of Responses: <%= @survey.responses.count %>
-  </li>
-  <li>
-    Redphone URL: <%= @survey.url %> 
+    <span>Redphone URL: <%= @survey.url %> </span>
   </li>
 </ul>
 
-<table>
+<table class="table table-striped table-bordered">
   <tr>
     <th>
       Respondent's email
