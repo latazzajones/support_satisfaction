@@ -30,4 +30,8 @@
     <% end %>
 
   </table>
+
+  <small>
+    <%= link_to "Test Survey!", @surveys.order("RANDOM()").first.survey_url %>
+  </small>
 </div>
